@@ -1,0 +1,33 @@
+环境登录密码
+wuhongyu@acca.com.cn
+ABCabc123
+
+2.wangfy@acca.com.cn
+ABCabc123
+
+
+手机 18810341158
+	253798348
+
+1、单元测试参数
+ -Xms512m -Xmx512m
+2、审批功能，新增字段的审批功能
+ 对应的表上添加新增字段
+ 对应的Approvel 表上同样添加新增字段 
+ 刷库：刷两个表
+ 但是由于这两个表继承一个Base实体，因此容易漏刷
+ 同时在Approvel实体的类名上添加新增字段。
+ 一般审批和审计功能同时都要有。
+ 
+3、对于Billing中新添加的表，记得在RollBack中删除数据。
+
+4.在Billing中CreateTicket 中不用get*** !=null  判断 ！=0 判断
+
+5.货币的变更，同时关注Deci取值。 
+
+6.记得写Test 同时更新Test
+
+7. Csi ouputId PCPADLYCSI
+
+8.Common包common-configuration.jar         common-beanutils.jar 
+
